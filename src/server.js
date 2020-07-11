@@ -1,5 +1,5 @@
 const express = require('express')
-const routes = require('./src/routes')
+const routes = require('./routes')
 
 const app = express()
 
@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(routes)
 
 app.get('/', (req, res) => {
-    res.json({'Hello': 'world'})
+    res.send('We are online')
 })
 
 
